@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Lissitzky</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+    	<h1>Miriam Lehmacher 83802</h1>
+        <!--- we geven ons canvas de naam mijn Canvas-->
+        <canvas id="mijnCanvas" width="500" height="619" style="border:1px solid #000000; background-color: #E0CC88">
+            Your browser does not support the HTML5 canvas tag.
+
+        </canvas>
+
+            
+            <script>
+            // Hieronder maken we een object van ons canvas en creëren we de (be)werkbare "context"
+            var canvasObject = document.getElementById("mijnCanvas");
+            var contextObject = canvasObject.getContext("2d");
+
+            // Maak de kleur wit #EBE7DC aan.
+            // Daarna maken we een vorm met .lineTo en sluiten die met .closePath()
+            // De vorm begint 127 op de x as, 232 op de y as (het bovenste linker puntje)
+
+            // zwarte lijn
+            contextObject.beginPath();
+            contextObject.moveTo(52, 180);
+            contextObject.lineTo(52, 150);
+            contextObject.lineTo(450, 498);
+            contextObject.lineTo(450, 521);
+            contextObject.closePath();
+            contextObject.fillStyle = "black";
+            contextObject.fill(); 
+
+            // donkerrode lijn
+            contextObject.beginPath();
+            contextObject.moveTo(46, 165);
+            contextObject.lineTo(46, 135);
+            contextObject.lineTo(440, 465);
+            contextObject.lineTo(440, 500);
+            contextObject.closePath();
+            contextObject.fillStyle = "#852C18";
+            contextObject.fill(); 
+
+            // Bovenste vierkant rood
+            contextObject.beginPath();
+            contextObject.moveTo(153, 263);
+            contextObject.lineTo(220, 240);
+            contextObject.lineTo(260, 278);
+            contextObject.lineTo(185, 298);
+            contextObject.closePath();
+            contextObject.fillStyle = "#B12F21";
+            contextObject.fill(); 
+
+
+            contextObject.beginPath();
+            contextObject.moveTo(127, 232);
+            contextObject.lineTo(127, 369);
+            contextObject.lineTo(200, 352);
+            contextObject.lineTo(200, 215);
+            contextObject.closePath();
+            contextObject.fillStyle = "#EBE7DC";
+            contextObject.fill();
+
+            // Grijze zijkant
+            contextObject.beginPath();
+            contextObject.moveTo(88, 200);
+            contextObject.lineTo(88, 330);
+            contextObject.lineTo(128, 370);
+            contextObject.lineTo(127, 235);
+            contextObject.closePath();
+            contextObject.fillStyle = "#AFAAA3";
+            contextObject.fill();    
+
+            // Zwarte bovenkant
+            contextObject.beginPath();
+            contextObject.moveTo(88, 200);
+            contextObject.lineTo(160, 180);
+            contextObject.lineTo(200, 215);
+            contextObject.lineTo(127, 235);
+            contextObject.closePath();
+            contextObject.fillStyle = "black";
+            contextObject.fill(); 
+
+            // donkerrode vierkant aan witte vierkant vooraan
+            contextObject.beginPath();
+            contextObject.moveTo(245, 345);
+            contextObject.lineTo(319, 327);
+            contextObject.lineTo(362, 362);
+            contextObject.lineTo(282, 382);
+            contextObject.closePath();
+            contextObject.fillStyle = "#B12F21";
+            contextObject.fill(); 
+            
+            // grijze lijn 1
+            contextObject.beginPath();
+            contextObject.moveTo(169, 187);
+            contextObject.lineTo(225,174);
+            contextObject.lineTo(230, 182);
+            contextObject.lineTo(177, 195);
+            contextObject.closePath();
+            contextObject.fillStyle = "#8A8982";
+            contextObject.fill();
+
+            // grijze lijn 2
+            contextObject.beginPath();
+            contextObject.moveTo(214, 177);
+            contextObject.lineTo(225, 174);
+            contextObject.lineTo(357, 287);
+            contextObject.lineTo(341, 290);
+            contextObject.closePath();
+            contextObject.fillStyle = "#8A8982";
+            contextObject.fill();
+
+            // witte vierkant vooraan
+            contextObject.beginPath();
+            contextObject.moveTo(260, 279);
+            contextObject.lineTo(335, 260);
+            contextObject.lineTo(320, 326);
+            contextObject.lineTo(245, 345);
+            contextObject.closePath();
+            contextObject.fillStyle = "white";
+            contextObject.fill(); 
+
+            // grijze lijn 3
+            contextObject.beginPath();
+            contextObject.moveTo(274, 297);
+            contextObject.lineTo(345, 277);
+            contextObject.lineTo(357, 287);
+            contextObject.lineTo(284, 308);
+            contextObject.closePath();
+            contextObject.fillStyle = "#8A8982";
+            contextObject.fill();
+
+            // Maak de eerste lijn, de hele lange verticale
+            // Beginnen met een beginPath() Hier begint het maken van het lijn object
+            // De lineWIDTH  hoef ik niet uit te leggen
+            // moveTo is waar de lijn gaat beginnen
+            // Line to is het eindpunt van de lijn
+            // strokestyle geeft de lijn een kleur
+            // stroke voert de lijn uit!
+
+            // De verticale lijn
+            contextObject.beginPath();
+            contextObject.lineWidth = 2;
+            contextObject.moveTo(213, 57);
+            contextObject.lineTo(219, 504);
+            contextObject.strokeStyle = "#AD9056";
+            contextObject.stroke();
+
+            //circle
+            contextObject.beginPath();
+            contextObject.fillStyle = "#B12F21";
+			contextObject.arc(canvasObject.width / 2.3, canvasObject.height / 1.2, 22, 0, 2 * Math.PI);
+			contextObject.stroke();
+			contextObject.fill();
+
+            // tweede bruine lijn
+            contextObject.beginPath();
+            contextObject.lineWidth = 2;
+            contextObject.moveTo(213, 57);
+            contextObject.lineTo(334, 258);
+            contextObject.strokeStyle = "#AD9056";
+            contextObject.stroke();
+
+            // donkerrode vierkant vooraan
+            contextObject.beginPath();
+            contextObject.moveTo(164, 280);
+            contextObject.lineTo(240, 260);
+            contextObject.lineTo(260, 278);
+            contextObject.lineTo(185, 298);
+            contextObject.closePath();
+            contextObject.fillStyle = "#B12F21";
+            contextObject.fill(); 
+
+
+
+
+            </script> 
+    </body>
+</html>

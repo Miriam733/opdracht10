@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mondriaan</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+
+    	<h1>Miriam Lehmacher 83802</h1>
+    	
+        <!--- we geven ons canvas de naam mijn Canvas-->
+        <canvas id="mijnCanvas" width="1000" height="1000" style="border:1px solid #000000;">
+            Your browser does not support the HTML5 canvas tag.</canvas>
+            
+            <script>
+            // Hieronder maken we een object van ons canvas en creëren we de (be)werkbare "context"
+            var canvasObject = document.getElementById("mijnCanvas");
+            var contextObject = canvasObject.getContext("2d");
+           
+            // Maak de kleur rood aan.
+            // Daarna maken een fillRect (een kubus met een kleur erin, hij neemt dan de rood)
+            // De kubus begint 80 op de x as, 80 op de y as (het bovenste linker puntje), en hij is 300 breed en hoog.
+            contextObject.fillStyle = "#f0463a";
+            contextObject.fillRect(80, 80, 500, 500);
+
+          	// gele rechthoek rechtsboven
+            contextObject.fillStyle = "#f7ef4a";
+            contextObject.fillRect(580, 0, 380, 250);
+
+            // blauwe rechthoek
+            contextObject.fillStyle = "#000980";
+            contextObject.fillRect(580, 680, 380, 220);
+
+   			// Maak de eerste lijn, de hele lange horizontale
+            // Beginnen met een beginPath() Hier begint het maken van het lijn object
+            // De lineWIDTH  hoef ik niet uit te leggen
+            // moveTo is waar de lijn gaat beginnen
+            // Line to is het eindpunt van de lijn
+            // stroke voert de lijn uit!
+            contextObject.beginPath();
+            contextObject.lineWidth = 11;
+            contextObject.moveTo(4, 75);
+            contextObject.lineTo(962, 76);
+            contextObject.stroke();
+
+            // De verticale lijn
+            contextObject.beginPath();
+            contextObject.lineWidth = 11;
+            contextObject.moveTo(131, 4);
+            contextObject.lineTo(131, 75);
+            contextObject.stroke();
+
+            // Lijnen om vierkant heen
+            // links
+            contextObject.beginPath();
+            contextObject.lineWidth = 11;
+            contextObject.moveTo(76, 3001);
+            contextObject.lineTo(76, 80);
+            contextObject.stroke();
+
+            // onder
+           	contextObject.beginPath();
+            contextObject.lineWidth = 11;
+            contextObject.moveTo(70, 581);
+            contextObject.lineTo(961, 581);
+            contextObject.stroke();
+
+            // zijkant
+            contextObject.beginPath();
+            contextObject.lineWidth = 11;
+            contextObject.moveTo(4, 250);
+            contextObject.lineTo(71, 250);
+            contextObject.stroke();
+
+            // rechts
+            contextObject.beginPath();
+            contextObject.lineWidth = 11;
+            contextObject.moveTo(581, 3000);
+            contextObject.lineTo(581, 4);
+            contextObject.stroke();
+
+
+            // verticale lijn rechts
+            contextObject.beginPath();
+            contextObject.lineWidth = 11;
+            contextObject.moveTo(960, 3000);
+            contextObject.lineTo(960, 4);
+            contextObject.stroke();
+
+            // horizontale lijn rechts
+            contextObject.beginPath();
+            contextObject.lineWidth = 11;
+            contextObject.moveTo(575, 250);
+            contextObject.lineTo(960, 250);
+            contextObject.stroke();
+
+            // korte verticale lijn rechts
+            contextObject.beginPath();
+            contextObject.lineWidth = 11;
+            contextObject.moveTo(770, 580);
+            contextObject.lineTo(770, 250);
+            contextObject.stroke();
+
+            // horizontale lijn onder
+           	contextObject.beginPath();
+            contextObject.lineWidth = 11;
+            contextObject.moveTo(7, 680);
+            contextObject.lineTo(996, 680);
+            contextObject.stroke();
+
+            // zwarte vierkant
+            contextObject.fillStyle = "#0d0d0d";
+            contextObject.fillRect(80, 580, 220, 220);
+
+            // tweede horizontale lijn onder
+            contextObject.beginPath();
+            contextObject.lineWidth = 11;
+            contextObject.moveTo(100, 795);
+            contextObject.lineTo(580, 795);
+            contextObject.stroke();
+
+            // gele rechthoek linksonder
+            contextObject.fillStyle = "#f7ef4a";
+            contextObject.fillRect(1, 685, 70, 500);
+
+            // verticale lijn rechts van zwarte vierkant
+            contextObject.beginPath();
+            contextObject.lineWidth = 11;
+            contextObject.moveTo(300, 3000);
+            contextObject.lineTo(300, 580);
+            contextObject.stroke();
+
+            // horizontale lijn rechtsonder
+            contextObject.beginPath();
+            contextObject.lineWidth = 10;
+            contextObject.moveTo(300, 901);
+            contextObject.lineTo(960, 901);
+            contextObject.stroke();
+
+            // zwarte rechthoek onder
+            contextObject.fillStyle = "#0d0d0d";
+            contextObject.fillRect(300, 800, 280, 100);
+
+            // rode rechthoek rechtsonder
+            contextObject.fillStyle = "#f0463a";
+            contextObject.fillRect(965, 685, 70, 500);
+            
+            </script> 
+    </body>
+</html>
