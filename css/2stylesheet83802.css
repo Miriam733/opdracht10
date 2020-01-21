@@ -29,7 +29,7 @@ body, html {
 }
 
 h1, h2, h3, .navText, hr {
-	color: #626262;
+	color: grey;
 	font-family: 'Roboto', sans-serif;
 }
 
